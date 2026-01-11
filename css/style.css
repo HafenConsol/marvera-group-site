@@ -1,0 +1,157 @@
+/* =========================================
+   MARVERA GROUP - INSTITUTIONAL STYLES
+   Concept: Swiss Holding | Quiet Authority
+   ========================================= */
+
+:root {
+    /* Paleta de Cores: Sóbria, Profunda, Neutra */
+    --bg-color: #FDFDFD;         /* Off-white (menos agressivo que branco puro) */
+    --text-color: #333333;       /* Cinza chumbo para leitura confortável */
+    --heading-color: #0E2A47;    /* Azul Marinho Profundo (quase preto) */
+    --accent-color: #5A6D80;     /* Azul Acinzentado (para detalhes) */
+    --line-color: #E5E5E5;       /* Cinza pálido para divisórias sutis */
+}
+
+/* Reset Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* Stack de fontes Sans-Serif para o corpo: Moderna e Limpa */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.75; /* Altura de linha generosa para elegância */
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased; /* Renderização de fonte nítida */
+}
+
+/* =========================================
+   TYPOGRAPHY
+   ========================================= */
+
+h1, h2, h3 {
+    /* Stack de fontes Serif para títulos: Autoridade e Tradição */
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    color: var(--heading-color);
+    font-weight: 500; /* Peso médio, sem negrito excessivo */
+    letter-spacing: -0.02em; /* Leve aproximação para sofisticação */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line-color); /* Linha fina e discreta */
+}
+
+p {
+    margin-bottom: 1.5rem;
+    max-width: 65ch; /* Limita largura do texto para leitura ideal */
+}
+
+.tagline {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-top: 10px;
+}
+
+/* Destaques no texto (substitui o azul neon do rascunho anterior) */
+.highlight {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+/* Listas */
+ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* =========================================
+   LAYOUT & STRUCTURE
+   ========================================= */
+
+/* Container Central: O foco da leitura */
+.container {
+    max-width: 720px; /* Estreito para parecer editorial/carta */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header: Minimalista */
+header {
+    padding: 5rem 0 4rem 0; /* Muito espaço acima e abaixo */
+    text-align: center;
+}
+
+.logo {
+    max-width: 180px; /* Tamanho controlado */
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    /* Se o logo for preto/transparente, ok. 
+       Se tiver fundo branco, garante que mescla com o site */
+}
+
+/* Sections: Ritmo vertical */
+section {
+    margin-bottom: 5rem; /* Espaço "caro" entre tópicos */
+}
+
+/* Footer: O mais silencioso possível */
+footer {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    border-top: 1px solid var(--line-color);
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* =========================================
+   UTILITIES & RESPONSIVE
+   ========================================= */
+
+/* Links (se houver, como email) devem ser discretos */
+a {
+    color: var(--heading-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line-color);
+    transition: border-color 0.2s;
+}
+
+a:hover {
+    border-bottom-color: var(--heading-color);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 3rem 0;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
